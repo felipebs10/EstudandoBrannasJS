@@ -1,0 +1,64 @@
+<html>
+    <script>
+        //janeiro
+        salario1 = 3000 
+        aluguel1 = 1000 
+        contaDeagua1 = 200
+        contaDeluz1 = 100 
+        internet1 = 100
+        lazer1 = 300
+        alimentacao1 = 500 
+        transporte1 = 300
+        saldo1 = (salario1 - aluguel1 - contaDeagua1 - contaDeluz1 - internet1 - lazer1 - alimentacao1 - transporte1)
+        console.log("Saldo em Janeiro foi: " + saldo1)
+        //console.log(saldo1)
+        //Tipo Boolean
+        //console.log(saldo1 < 0 )
+        estaNegativo1 = saldo1 < 0
+        if (estaNegativo1){
+            //console.log("Em janeiro está negativo")
+            console.log("Juros de Janeiro: " + saldo1 * 0.1)
+            saldoCorrigidoJuros1 = saldo1 + saldo1 * 0.1
+            console.log("Saldo Corrigido com juros: " + saldoCorrigidoJuros1)
+
+        }else {
+            //console.log("Em janeiro está positivo")
+            console.log("Rendimento de janeiro: " + (saldo1 *0.005))
+            saldoCorrigidoJuros1 = saldo1 + saldo1 * 0.005
+            console.log("Saldo Corrigido com rendimentos: " + saldoCorrigidoJuros1)
+        }
+        //Fevereiro
+        salario2 = 3000 
+        aluguel2 = 1200 
+        contaDeagua2 = 250
+        contaDeluz2 = 100 
+        internet2 = 100
+        lazer2 = 0
+        alimentacao2 = 1000 
+        transporte2 = 500
+        saldo2 = (salario2- aluguel2 - contaDeagua2 - contaDeluz2 - internet2 - lazer2 - alimentacao2 - transporte2)
+        console.log("Saldo em Fevereiro foi: " + saldo2)
+        //console.log(saldo2)
+        //Tipo boolean
+        //console.log(saldo2 < 0 )
+        estaNegativo2 = saldo2 < 0
+        if (estaNegativo2){
+            //console.log("Em fevereiro está negativo")
+            juros2 = saldo2 * 0.1
+            console.log ("Juros em fevereiro: " + juros2)
+            saldoCorrigidoJuros2 = saldo2 + juros2
+            console.log("Saldo Corrigido com juros: " + saldoCorrigidoJuros2)
+        }else {
+            //console.log("Em fevereiro está positivo")
+            rendimentos2 = saldo2 * 0.005
+            console.log("Rendimentos em fevereiro: " + rendimentos2)
+            saldoCorrigidoJuros2 = saldo2 + rendimentos2 +
+            console.log("Saldo Corrigido com juros: " + saldoCorrigidoJuros2)
+        }
+        acumuladoAno = (saldo1 + saldo2)
+        acumuladoSaldoCorrigido = saldoCorrigidoJuros2 + saldoCorrigidoJuros1
+        console.log("O acumulado até o momento foi: " + acumuladoAno)
+        console.log("O acumulado até o momento saldo corrigido foi: " + acumuladoSaldoCorrigido)
+
+    </script>
+</html>
