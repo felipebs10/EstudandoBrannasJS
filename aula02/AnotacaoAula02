@@ -1,0 +1,35 @@
+Anotações 
+Aula 02
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula02
+
+Iniciado no dia 21/07 
+- Ele relembra o que foi apresentado na última aula;
+- Ele informa que vai apresentar sobre funções; 
+- Sugestão dele é sempre passos pequenos; 
+- Ele cria os valores de março zerado; 
+- Após isso ele começa a apresentar o como é a função
+- Realizado ajuste para calcucar os valores do juros2 de fevereiro
+- Pausado no minuto 24:17; 
+- Após isso ele vai calcular a próxima;
+================================================
+Retomando no dia 23/07
+- Criado as funções para calcular juros e rendimentos;
+- Colocado o return para devolver um valor; 
+- Aplicado nos meses de janeiro e fevereiro;
+- Retirado comentários do código e resumido o código nas
+funções para calcular juros, calcular rendimentos e calcularsaldo, 
+- Pausado no minuto 39:44, ele está falando do saldo que entrou, vai fazer algum tratamento;
+================================================
+Retomado no dia 28/07 
+- É passado mais parametros para debugar o código; 
+- É alterado para mostrar como calcular o saldo total se baseando no do mês anterior;
+- É mostrado como realizar o arendondamento de um valor; 
+- É criada uma função geral para arrendondar os valores;
+- É sugerido que não coloque comentários no código, porque pode poluir;
+- Sugerido que coloque nomes claros;
+================================================
+

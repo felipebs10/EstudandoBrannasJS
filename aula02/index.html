@@ -1,0 +1,79 @@
+<html>
+    <script>
+         function calcularJuros(valor) {
+            juros = arrendondar(valor * 0.1);
+            console.log("Juros: ", juros)
+            return juros;
+         }
+
+         function arrendondar(valor){
+            return Math.round(valor *100) / 100;
+         }
+
+         function calcularRendimentos(valor) {
+            rendimentos = arrendondar(valor * 0.005);
+            //console.log("Rendimentos: ", Math.round(rendimentos *100) / 100)
+            console.log("Rendimentos: ", rendimentos)
+            return rendimentos;
+         }
+
+
+        function calcularSaldo (mes, saldoInicial, salario, aluguel, contaDeagua, contaDeluz,  internet, lazer, alimentacao, transporte) {
+            console.log(mes)
+            saldo = (
+                    saldoInicial + salario - aluguel - contaDeagua - contaDeluz - 
+                    internet - lazer - alimentacao - transporte
+                    )
+            estaNegativo = saldo < 0
+            if (estaNegativo){
+                juros = calcularJuros(saldo)
+                saldo = arrendondar(saldo + juros)
+            }else {
+                juros = calcularRendimentos(saldo)
+                saldo = arrendondar( saldo + juros)
+            }
+            return saldo;
+        }
+
+        //janeiro
+        saldoInicial = 0
+        salario1 = 3000 
+        aluguel1 = 1000 
+        contaDeagua1 = 200
+        contaDeluz1 = 100 
+        internet1 = 100
+        lazer1 = 300
+        alimentacao1 = 500 
+        transporte1 = 300
+        saldo1 = calcularSaldo("janeiro", saldoInicial, salario1, aluguel1, contaDeagua1, contaDeluz1, internet1, lazer1, alimentacao1, transporte1)  
+        console.log("Saldo em Janeiro é: " + saldo1)      
+
+
+        //Fevereiro
+        salario2 = 3000 
+        aluguel2 = 1200 
+        contaDeagua2 = 250
+        contaDeluz2 = 100 
+        internet2 = 100
+        lazer2 = 0
+        alimentacao2 = 1000 
+        transporte2 = 500
+        saldo2 = calcularSaldo("Fevereiro", saldo1, salario2, aluguel2, contaDeagua2, contaDeluz2, internet2, lazer2, alimentacao2, transporte2)  
+        console.log("Saldo em Fevereiro é: " + saldo2)  
+
+        //Março
+        salario3 = 4000 
+        aluguel3 = 1200 
+        contaDeagua3 = 200
+        contaDeluz3 = 100 
+        internet3 = 200
+        lazer3 = 800
+        alimentacao3 = 1000 
+        transporte3 = 500
+        saldo3 = calcularSaldo("março", saldo2, salario3, aluguel3, contaDeagua3, contaDeluz3, internet3, lazer3, alimentacao3, transporte3)  
+        console.log("Saldo em Março é: " + saldo3) 
+        acumuladoAno = saldo3
+        console.log("O acumulado até o momento foi: " + acumuladoAno)
+
+    </script>
+</html>
