@@ -1,0 +1,134 @@
+<html>
+    <script>
+
+        function calcularJuros(valor) {
+            juros = arrendondar(valor * 0.1);
+            console.log("Juros: ", juros)
+            return juros;
+         }
+
+         function arrendondar(valor){
+            return Math.round(valor *100) / 100;
+         }
+
+         function calcularRendimentos(valor) {
+            rendimentos = arrendondar(valor * 0.005);
+            //console.log("Rendimentos: ", Math.round(rendimentos *100) / 100)
+            console.log("Rendimentos: ", rendimentos)
+            return rendimentos;
+         }
+
+
+        function calcularSaldo (mes, saldoInicial, lancamentos) {
+            console.log(mes)
+            saldo = saldoInicial
+            for (lancamento of lancamentos){
+                if (lancamento.tipo === "receita"){   //Comparação é três iguais === 
+                    //saldo = saldo + lancamento
+                    //Outra forma de fazer
+                    saldo += lancamento.valor;
+                }
+                if (lancamento.tipo === "despesa"){
+                    saldo -= lancamento.valor;
+                }
+            }
+          
+            estaNegativo = saldo < 0
+            if (estaNegativo){
+                juros = calcularJuros(saldo)
+                saldo = arrendondar(saldo + juros)
+            }else {
+                juros = calcularRendimentos(saldo)
+                saldo = arrendondar( saldo + juros)
+            }
+            return saldo;
+        }
+
+        //janeiro
+        saldoInicial = 0
+        lancamentosJaneiro = [
+            {categoria: "Salário",       tipo: "receita", valor: 3000},
+            {categoria: "Aluguel",       tipo: "despesa", valor: 1000}, 
+            {categoria: "Conta de Luz" , tipo: "despesa", valor:  200},
+            {categoria: "Conta de água", tipo: "despesa", valor:  100}, 
+            {categoria: "Internet",      tipo: "despesa", valor:  100}, 
+            {categoria: "Transporte",    tipo: "despesa", valor:  300}, 
+            {categoria: "Lazer",         tipo: "despesa", valor:  300}, 
+            {categoria: "Alimentação",   tipo: "despesa", valor:  500}, 
+            {categoria: "Condomínio",    tipo: "despesa", valor:  300}, 
+            {categoria: "Farmácia",      tipo: "despesa", valor:  100}    
+    ]
+    
+    saldo1 = calcularSaldo("janeiro", saldoInicial,  lancamentosJaneiro)        
+    console.log("Saldo em Janeiro é: " + saldo1)              
+    //Fevereiro    
+    lancamentosFevereiro = [
+            { categoria: "Salário",       tipo: "receita", valor:  3000  }, 
+            { categoria: "Aluguel",       tipo: "despesa", valor:  1200  }, 
+            { categoria: "Conta de Luz",  tipo: "despesa", valor:   250  }, 
+            { categoria: "Conta de água", tipo: "despesa", valor:   100  }, 
+            { categoria: "Internet",      tipo: "despesa", valor:   100  }, 
+            { categoria: "Transporte",    tipo: "despesa", valor:   500  },
+            { categoria: "Alimentação",   tipo: "despesa", valor:  1000  }, 
+            { categoria: "Condomínio",    tipo: "despesa", valor:   400  }
+    ]
+        saldo2 = calcularSaldo("Fevereiro", saldo1, lancamentosFevereiro)  
+        console.log("Saldo em Fevereiro é: " + saldo2)  
+        //Março
+        lancamentoMarço = [
+            { categoria: "Salário",       tipo: "receita", valor:  4000 } , 
+            { categoria: "Aluguel",       tipo: "despesa", valor:  1200 } , 
+            { categoria: "Conta de Luz",  tipo: "despesa", valor:   200 } , 
+            { categoria: "Conta de água", tipo: "despesa", valor:   100 } , 
+            { categoria: "Internet",      tipo: "despesa", valor:   200 } , 
+            { categoria: "Transporte",    tipo: "despesa", valor:   500 } , 
+            { categoria: "Lazer",         tipo: "despesa", valor:   800 } , 
+            { categoria: "Alimentação",   tipo: "despesa", valor:  1000} , 
+            { categoria: "Condomínio",    tipo: "despesa", valor:   400 }  
+    ]
+        
+        saldo3 = calcularSaldo("março", saldo2, lancamentoMarço)  
+        console.log("Saldo em Março é: " + saldo3) 
+        acumuladoAno = saldo3
+        //console.log("O acumulado até o momento foi: " + acumuladoAno)   
+
+        //Percorrento o array e os objetos para mostrar
+        /*for (lancamento of lancamentosJaneiro){
+            console.log(lancamento)
+        }
+        */ 
+        //Percorrento o array e os objetos para mostrar valores específicos
+       /* for (lancamento of lancamentosJaneiro){
+            console.log(lancamento.categoria, lancamento.valor)
+        }
+        */
+
+        // Vendo a quantidade de lançamentos em janeiro
+        console.log("Quantidade de lançamentos em janeiro: " + lancamentosJaneiro.length)
+        
+        //Inserindo novos valores dentro do array de duas formas
+        lancamentosJaneiro[10] = {categoria: "Financiamento", tipo:"despesa", valor: 200}
+        lancamentosJaneiro.push({categoria:"Lazer", tipo:"despesa", valor: 150})
+        //Removendo os últimos valores do array
+        lancamentosJaneiro.pop()
+        lancamentosJaneiro.pop()
+        for (lancamento of lancamentosJaneiro){
+            console.log(lancamento.categoria, lancamento.valor)
+        }
+
+        //Exemplo de objeto pessoa
+        /* nome   =  "Felipe Santos"
+        idade  =  37
+        email  = "felipebs10@gmail.com" 
+        casado = true
+
+        pessoa = {
+        nome   :  "Felipe Santos",
+        idade  :  37,
+        email  : "felipebs10@gmail.com" ,
+        casado : true
+        }
+        console.log(pessoa) */
+
+    </script>
+</html>

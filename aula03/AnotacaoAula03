@@ -1,0 +1,48 @@
+Anotações 
+Aula 03
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula03
+
+Iniciado no dia 30/07 
+- Ele começa relembrando o que era a função e como ela
+pode ser reutilizada;
+- Ele reforça para implementar;
+- Copiei o código do anterior para aproveitar e economizar tempo; 
+- Ele explica como pode ser trabalhaso ter que inserir varios valores, como remédio entre outros valores que podem surgir; 
+- Ele introduz que nesse video será apresentando sobre estrutura de dados (array e objeto);
+- Exemplifica como uma lista; 
+- O colchete com valores é um array, (matriz linha em matemática);
+- Alterado o programa para gravar os valores em um array;
+- Alterado a função para percorrer o for e verificar os valores;
+- Alterado para acumular os valores com short sintaxe;
+- Apresentado como um array pode ter elementos com tipos, inteiros, string ou booleans, em outras linguagens não; 
+- Apresentando como pode adicionar os elementos em uma lista, e mostrar no index_exemploArray.htoml
+- Seguir a partir desse ponto de letras no array;
+- Vídeo pausado aos 30:00 minutos;
+================================================================================================
+Retomando no dia 03/08
+- Apresentando como adicionar elementos no array e remover com os métodos push e pop, assim
+como mostrar ou ler o tamanho do array com legth;
+- [] (colchetes) é para array com os valores, uma lista de valores pode armazenar uma lista de objetos;
+- {} (chaves) é para conjunto de valores, objeto;
+- um igual (=) é atribuição no javascript
+- três iguais (===) é comparação no javascript, obs dois também funcionou no meu teste;
+- Ele faz um array com objetos dentro, onde é possível descrever o sigfnifica, o tipo (receota ou despesa) e os valores utilizados para o cálculo;
+- Junto com isso ele utiliza para realizar o if com o o tipo e calcular seja somar ou subtrair os valores;
+- É apresentado como percorerr a lista utilizando o for;
+- Exemplo de objeto pessoa
+        nome   =  "Felipe Santos"
+        idade  =  37
+        email  = "felipebs10@gmail.com" 
+        casado = true
+
+        pessoa = {
+        nome   :  "Felipe Santos",
+        idade  :  37,
+        email  : "felipebs10@gmail.com" ,
+        casado : true
+        }
+        console.log(pessoa)
