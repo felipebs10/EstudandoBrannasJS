@@ -1,0 +1,30 @@
+Anotações 
+Aula 04
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula04
+
+Iniciado no dia 04/08 
+- Seguindo a mesma lógica da aula 03, mantem os dados;
+- Retirei alguns trechos comentados para deixar só o core do programa; 
+- É apresentado que os lançamentos tem várias caracteristicas repetidas, no mês, como categoria , tipo e valor, logo é possível criar uma classe; 
+- Não esquecer o javascript é cansesensitie; 
+- Para pegar os parâmetros da classe é necessário ter um construtor;
+- O construtor vai receber os parâmetros, toda classe tem que ter um construtor, nesse casorecebe
+Construtor recebe categoria, tipo e valor;
+- Para associar os valores criados aos parâmetros da classe é obrigatório usar o this
+- Ele mostra também como validar para não deixar criar o construtor fora do padrão, ou seja, validações através do if;
+- Pausado na parte onde deixamos os arrays apenas com os valores para serem enviados aos contrutor sem precisar informar sobre qual valor está ao lado;
+- Pausado no 20:11
+========================================================================
+Retomado no dia 06/08
+- Define a classe como a estrutura que rege a criação de objetos que se repete na aplicação;
+- Define o objeto como com conjunto de chaves e valores agrupaveis, exemplo lançamento; 
+- visto que é possível usar o throw para tratar na validação;
+- Ele cria um objeto totalizadorDoMes par acumular os valores totalizados; 
+- Apos isso ele percorre o objeto para realizar o calulcar para saber o peso da despesa por percentual; 
+- Criada uma função para distribuir as despesas;
+- Acumula em um array as despesas com o percentual referente as despesas daquele mês;
+

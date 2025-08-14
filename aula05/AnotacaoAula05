@@ -1,0 +1,39 @@
+Anotações 
+Aula 05
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula05
+
+Iniciado no dia 11/08 
+- Aula rferente Orientação objetos, métodos e encapsulamento; 
+- Começa explicando agora sobre váriaveis e suas declarações; 
+- Se a variável não for mudar, exemplo taxa de juro ou rendimentos, é sugerido que seja declarado como const, para não que tenha reatribuição, mas caso seja preciso deve ser usado o let; 
+- Ele ajusta o código para manter as variáveis que precisam como const;
+- No javascript também pode ser usado a palavra var, mas está em desuso, o var já está de lado estão usando o let e o const;
+- ponto e vírgula no javascript é opcional, a recomendação é que use;
+- A classe é uma proteção do estado do objeto; 
+- Ele mostra como a mesma lógica realizada na função pode ser implementada dentro da classe;
+- Ele explica como pode ser realizado um teste manual,
+utilizando o comparadorp para ver se mudança não vai causar um erro; 
+- Pausado no 28:43, voltar um pouco, pois ele vai retirar
+a lógica da função para jogar dentro da classe;
+========================================================================
+Retomado no dia 13/08
+- Ele muda a função calcular saldo para dentro da classe mês;
+- Nesse caso é visto a complexidade, não precisa da palavra function;
+- Além da classe lançamento, ele cria nessa aula uma classe mês com várias funções internas nela;
+- Apos isso ele começa a modularizar o código, criando outros arquivos e jogando o código neles;
+- criando arquivos como lancamento.js e mes.js dentro do mesmo diretório;
+- 
+
+
+      // Apenas teste.
+        /*
+            const janeiro = new Mes("janeiro", 0); //o new é a instanciação
+            janeiro.adicionarLancamento(new Lancamento("Salário", "receita", 3000));
+            janeiro.adicionarLancamento(new Lancamento("aluguel", "despesa", 1000));
+            janeiro.calcularSaldo();
+            console.log(janeiro);
+        */

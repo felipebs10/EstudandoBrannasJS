@@ -1,0 +1,69 @@
+<html>
+    <script>
+
+        class Presente {
+            constructor(nome, tipo, valor){
+
+                if (tipo !== "gasto" && tipo !== "ganho"){
+                    throw new Error ("Lançamento Inválido: Tipo deve ser gasto ou ganho")                    
+                }
+
+                if (valor <=0 ){
+                    throw new Error ("Lançamento Inválido: Valor deve ser maior que zero")
+                }
+
+                if (nome === ""){
+                    throw new Error ("Nome não pode estar vazio")
+                }
+
+
+                this.nome = nome
+                this.tipo = tipo
+                this.valor = valor
+            }
+        }
+
+        
+
+        
+        function calcularValores (saldoAnual, presentes){
+            valoresgastos = saldoAnual
+            for (presente of presentes){
+                if (presente.tipo === "ganho"){
+                    valorganhado += presente.valor;
+                }
+                if (presente.tipo === "gasto") {
+                    valoresgastos -= presente.valor
+                }
+                
+            }
+             return valoresgastos;
+
+        }
+        
+        saldoAnual = 1000; 
+
+        listaPresentes = [
+            new Presente  ("DiadosPais" , "gasto", 100),
+            new Presente  ("Diadasmaes" , "gasto", 150),
+            new Presente  ("meuPresente", "gasto", 200),
+            new Presente  ("natal"      , "gasto",  50)
+        ]
+
+        saldogasto = calcularValores( saldoAnual, listaPresentes)
+
+        console.log("Saldo Inicial: ", saldoAnual)
+        console.log("Valor Restante: ",saldogasto)
+
+
+/* 
+const frutas = ['maça', 'banana', 'laranja'];
+
+for (const fruta of frutas){
+    console.log(fruta);
+}
+*/ 
+
+
+    </script>
+</html>
