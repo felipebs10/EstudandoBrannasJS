@@ -26,10 +26,10 @@ Retomado no dia 13/08
 - Além da classe lançamento, ele cria nessa aula uma classe mês com várias funções internas nela;
 - Apos isso ele começa a modularizar o código, criando outros arquivos e jogando o código neles;
 - criando arquivos como lancamento.js e mes.js dentro do mesmo diretório;
-- 
+- Após isso é refatorado para simplificar o códig; 
 
 
-      // Apenas teste.
+Observação:  Apenas teste.
         /*
             const janeiro = new Mes("janeiro", 0); //o new é a instanciação
             janeiro.adicionarLancamento(new Lancamento("Salário", "receita", 3000));
