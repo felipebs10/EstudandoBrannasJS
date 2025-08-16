@@ -1,0 +1,38 @@
+Anotações 
+Aula 06
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula06
+
+Iniciado no dia 16/08 
+- Ele começa copiando o código da outra aula;
+- É incluído uma despesa nova e mostra como recalcular de uma forma correto.
+- Ele tira a funções de cálculo e mostrar o resultado no main para deixar para o ano.js
+para exemplificar diferente. 
+- Ele cria a classe ano para agrupar e calcular os saldos; 
+- Após isso ele começa a mostrar como conectar o html e seus dados para o javascript; 
+- Ele começa explicar a API DOM (Document Object Model)
+- É alterado a ordem para carregar os scripts.js, para criar primeiro o elemento da div e poder carregar quando é invocado o document.getElementById no main.
+- Ele começa a mostrar os elementos na página html através da div e mostrar os dados inseridos dos exercícios anteriores;
+- Ele cria a função addElement para exemplificar um framework, onde é possível criar um 
+componente com uma função e par ser chamado e reutilizado
+- Ele cria o botão e a função para inserir uma despesa na tela fixa para mostrar a tela renderizando;
+- Ele coloca os inputs e botão e faz armazenar na página;
+- É possível adicionar as informações, como mês, categoria, tipo e o valor;
+
+Exemplo: function addElement (parent, elementType, text){
+                const element = document.createElement(elementType);
+                element.innerText = text;
+                parent.appendChild(element);
+            }
+
+
+
+Sigfinicado das siglas
+API
+Application Programing Interface
+
+GUI
+Graphic user Interface
