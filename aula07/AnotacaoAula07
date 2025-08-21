@@ -14,5 +14,11 @@ Iniciado no dia 18/08
   - CSS        - É a aparecencia, o estilo; 
 - E apresentando como começar a estilizar os elementos da página;
 - Mostrado como criar um componente no javascript, exemplo da tabela e organizar os valores deles que estão sendo inseridos; 
-- Pausado, porque ele ia começar a explicar no juro e na multa;
+- Pausado, porque ele ia começar a explicar no como organizar no código o juro e o rendimentos para aparecer na tabela;
 - Pausado no minuto 36:04
+- Retomado no dia 20/08 
+- Voltado para explicar como ele vai organizar para aprecer o rendimentos e os juros na tabela;
+- Explicado o a diferença id é único, classe pode ser vários;
+- Ele termina de estilizar os elementos; 
+- Mostra como criar os elementos via javascript e como chamar para estilizar esses elementos; 
+- Fazendo um gráfico para simular;
