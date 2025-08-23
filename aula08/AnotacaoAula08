@@ -1,0 +1,17 @@
+Anotações 
+Aula 08
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula08
+
+Iniciado no dia 23/08 
+- Mostrado como fazer um if ternário; 
+- E ajustado para começar mostrar os valores negativos;
+- Após isso ele começa a falar de componentização;
+- Ele cria o componente tabela(como uma classe), refatorando o código e diminuindo a quantidade de linhas e caso necessário reutilizando o componente; 
+- Ele refatora o código todo com vários componetes;
+- Ele separa por pastas;
+- A pasta domain seria os arquivos que tem a regra de negócio;
+
