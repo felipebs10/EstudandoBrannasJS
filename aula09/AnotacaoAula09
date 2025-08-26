@@ -1,0 +1,37 @@
+Anotações 
+Aula 09
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula09
+
+Iniciado no dia 25/08 
+- E explicado que a com essa aplicação ainda não é possível; 
+    - Armazenar dados;
+    - Recuperar dados;
+    - Acessar de outros navegadores;
+    - Outras pessoas acessarem; 
+
+- Ele começa explica o que é feito no frontend e no backend;
+ - frontend;
+     > Apresentação;
+     > Usabilidades;
+     > Interação; 
+ 
+ - Backend;
+     > Regras de negócio; 
+     > Mediação do armazenamento;  
+
+Obs.: Um conceito interessante passado pelo Brannas é que o fronend pode ser web, mobile, desktop, e e a regra de negócio teria que ser aplicado em todos eles, com o backend, fica um ponto único, 
+por isso o ponto de mediação do armazenamento;
+
+- Apó isso ele mostra a página para downloado do node;
+- executado dois comando 
+    > npm init -y - para começar o projeto;
+    > npm install express - para instalar o express; 
+- Após isso ele inicializa o servidor com os comandos escritos no server.js
+    > ele inicializa com o comando node server.js/
+- Após a programação no server.js, ele inicia no navegador nesse formato http://localhost:3000/app/
+- Ele armazena os dados no server.js e muda toda a tela.js para mostrar os valores da aplicação; 
+- Pausado no 42:21
