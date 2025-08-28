@@ -1,0 +1,18 @@
+Anotações 
+Aula 10
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula10
+
+Iniciado no dia 27/08 
+- Aula para interager com o banco de dados;
+- Baixei o postegresql e coloque a senha postgresql;
+- Ele começa criando o arquivo create.sql para ter os comandos;
+- O Brannas já estava com o database pronto eu vou ter que criar do zero e inserir dados, conforme create.sql;
+- Para o node acessar o postgresql é preciso instalar uma biblioteca, a biblioteca é pg-promise;
+    = npm install pg-promise;
+- Nesse vídeo ele mostra como bucar os valores nos banco de dados;
+- Nese vídeo ele mostra com inserir o valor no banco de dados;
+- Conclúido no mesmo dia, vídeo menor e concluído junto com aula 09;
