@@ -35,3 +35,10 @@ por isso o ponto de mediação do armazenamento;
 - Após a programação no server.js, ele inicia no navegador nesse formato http://localhost:3000/app/
 - Ele armazena os dados no server.js e muda toda a tela.js para mostrar os valores da aplicação; 
 - Pausado no 42:21
+
+- Retomado no dia 27/08 
+- Ele mostra como enviar o objeto para o backend;
+- Mostra como gravar o dado em servidor, porém se reinicar o node ele perde os dados;
+- Ele explica que tem muitas regras no frontend que vão ter que migrar para o backend;
+- Reforçando é usado o fetch (biblioteca), recurso para acessar nativamente o servidor e colocou o endpoint;
+- no Adicionar o lançamento ele inclui o valor para ficar gravado no server, com o fetch;

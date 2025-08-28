@@ -1,6 +1,7 @@
-const express = require ("express");
-const app = express ();
-app.use("/app", express.static("./client"));
+const express = require ("express"); //importando a biblioteca
+const app = express (); //instanciando um servidor
+app.use(express.json()); // conversor para transmitir os dados
+app.use("/app", express.static("./client"));  //abrindo o cliente por meio do servidor ;
 
 const lancamentos = [
      {mes: "janeiro",   categoria: "Salário",       tipo :"receita", valor:  4000 },
@@ -24,8 +25,17 @@ const lancamentos = [
      {mes: "abril",     categoria: "Salário",      tipo: "receita",  valor: 4000  },
 ];
 
+// Leio
 app.get ("/api/lancamentos", function (req, res){
     res.json(lancamentos);
+});
+
+//Escrevo
+app.post ("/api/lancamentos", function (req, res){
+    //console.log("body", req.body);
+    const lancamento = req.body;
+    lancamentos.push(lancamento)
+    res.end();
 });
 
 

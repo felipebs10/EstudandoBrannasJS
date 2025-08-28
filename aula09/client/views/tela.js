@@ -29,6 +29,8 @@ class Tela {
         const categoria = document.getElementById("categoria");
         const valor = document.getElementById("valor");
         this.ano.adicionarLancamento(mes.value, new Lancamento(categoria.value, tipo.value,  parseFloat(valor.value)));
+        fetch("http://localhost:3000/api/lancamentos",  {method: "post", headers: {"content-type":"application/json" }, 
+            body: JSON.stringify ({mes: mes.value, categoria: categoria.value, tipo: tipo.value, valor: parseFloat(valor.value)})})
         this.ano.calcularSaldo();
         this.renderizar();
         mes.value = this.ano.mes[0].nome;;
