@@ -1,0 +1,34 @@
+Anotações 
+Aula 11
+
+Plataforma do Brannas 
+https://app.branas.io/hello-world
+
+Anotação e exemplo no caminho: C:\Users\HomePC\Documents\Projetos\EstudandocomBrannas\aula11
+
+Iniciado no dia 30/08
+- Ele retoma revisando o código do serve.js
+- Reexplica o pgp que é biblioteca
+- Explica o pull de conexão com o connection;
+- Revisa o código do sql utilizado;
+- Ele começa a dividir as responsabilidades do back end para separar; 
+    Responsabilidades: 
+    1- Ponto de entrada da aplicação; ok 
+    2- Conexão com banco de dados; ok 
+    3- Definição dos serviços da API (Application Programing Interface); ok
+    4- Intereação com banco de dados; ok
+    5- Configuração das rotas da api e abertura do servidor numa porta específica ok
+
+- Ele começa explicar o SRP - Single REsponsibility principle (Evitar a fragilidade por conta das mudanças constantes e do acoplamento que existe entre essas responsabilidades);
+    Separe coisas que mudam por motivos diferentes;
+
+- Ao criar a conexão no landamentoData.js, ele inverte a chamada da conexão para não ter vários componente conectando no banco e ser mais compatível; 
+Conceito de DIP - Dependency Inversion Princpiple
+
+High Level modules should not depend on ow level modules, a conexão física que fala com o seridor é mais low level que outras operações, por isso ele passa a conexão como parâmetro;
+
+- É instalado o pacote npm install nodemon, de monitor, para executar usar o comando npx nodemon main.js, para não precisar ficar subindo o serviço toda hora.
+- Após os ajustes do lancamento ele vai começar a codificar para realmente excluir um registro;
+- Realizado o apagar; 
+- Problemas, porque precisa ficar dando F5 para atualizar os dados ;
+
